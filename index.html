@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+		<title>
+		</title>
+		<style>
+			table, th, td {
+			    border: 1px solid black;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>First</th>
+				<th>Last</th>
+				<th>Email Address</th>
+				<th>Contact #</th>
+			</tr>
+		</table>
+		<h1> Add User </h1>
+		<hr>
+		<form>
+			First Name: <input type = "text" value = "First Name"><br>
+			Last Name: <input type = "text" value = "Last Name"><br>
+			Email Address: <input type = "text" value = "Email Address"><br>
+			Contact No.: <input type = "text" value = "Contact No."><br>
+			<button type="button">Add User</button>
+		</form>
+		<script>
+			$('button').click(function(){
+				$('tr').parent().append('<h1> test </h1>')
+				})
+		</script>
+	</body>
+</html>
